@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Keelan Billing for bookings, collaborations, or general enquiries.">
+  <title>Contact — Keelan Billing Entertainment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Keelan Billing <span>Entertainment</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hire.html">Hire Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>General enquiries, collaborations, or just saying hi — drop a message and I'll get back to you.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container contact-layout">
+        <div>
+          <h2>Send a Message</h2>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+
+            <p class="honeypot">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" required placeholder="What's on your mind?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div>
+          <h2>Find Me Online</h2>
+          <p style="color: var(--text-muted);">Follow along for new music, behind-the-scenes content, and upcoming shows.</p>
+          <div class="social-links">
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://youtube.com/@yourhandle" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://facebook.com/yourhandle" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Keelan Billing Entertainment</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="hire.html">Hire Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hire Keelan Billing for live music performances or music video acting.">
+  <title>Hire Me — Keelan Billing Entertainment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Keelan Billing <span>Entertainment</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hire.html" aria-current="page">Hire Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Hire Me</h1>
+        <p>Two ways to collaborate — live music for your event, or on-camera performance for your next visual project.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="hire-offerings">
+          <article class="hire-card">
+            <h2>Hire for Music</h2>
+            <p>Live performance tailored to your event — original material, covers, or a mix of both.</p>
+            <ul>
+              <li>Solo acoustic or full band setup</li>
+              <li>Gigs, festivals, and private events</li>
+              <li>Custom setlists and rehearsal coordination</li>
+            </ul>
+          </article>
+          <article class="hire-card">
+            <h2>Hire as a Music Video Actor</h2>
+            <p>On-camera presence for music videos, short films, and branded content.</p>
+            <ul>
+              <li>Lead or supporting roles</li>
+              <li>Music videos and narrative shorts</li>
+              <li>Experienced with long shooting days and direction</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container">
+        <h2>Send an Enquiry</h2>
+        <p style="color: var(--text-muted); max-width: 480px;">Fill out the form below and I'll get back to you as soon as I can.</p>
+
+        <form name="hire" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="hire">
+
+          <p class="honeypot">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
+
+          <fieldset class="form-group">
+            <legend style="font-size: 0.85rem; font-weight: 500; color: var(--text-muted); margin-bottom: 0.65rem;">Which service are you interested in?</legend>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="service" value="Music" required>
+                Music — live sets &amp; performances
+              </label>
+              <label>
+                <input type="radio" name="service" value="Music Video Acting">
+                Music Video Acting
+              </label>
+              <label>
+                <input type="radio" name="service" value="Other">
+                Other
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="hire-name">Name</label>
+            <input type="text" id="hire-name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="hire-email">Email</label>
+            <input type="email" id="hire-email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="hire-date">Event or shoot date</label>
+            <input type="date" id="hire-date" name="date">
+          </div>
+
+          <div class="form-group">
+            <label for="hire-details">Details</label>
+            <textarea id="hire-details" name="details" placeholder="Tell me about your event, project, location, budget range, or anything else I should know."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Keelan Billing Entertainment</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="hire.html">Hire Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
