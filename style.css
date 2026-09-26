@@ -479,9 +479,12 @@ form {
   border-top-color: var(--accent);
 }
 
-.project-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
+.project-card h3 a {
+  color: inherit;
+}
+
+.project-card h3 a:hover {
+  color: var(--accent);
 }
 
 .project-tag {
@@ -526,11 +529,47 @@ form {
 /* --- Music --- */
 .music-block p {
   color: var(--text-muted);
-  max-width: 540px;
+  max-width: 560px;
 }
 
 .music-block .btn-group {
   margin-top: 1.5rem;
+}
+
+.spotify-embed {
+  margin-top: 2rem;
+  max-width: 100%;
+}
+
+.spotify-embed iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+.music-note {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.music-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.music-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--border);
+}
+
+.music-links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 /* --- Contact --- */
@@ -576,6 +615,10 @@ form {
   gap: 1rem;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.footer-inner .social-links {
+  margin-top: 0;
 }
 
 .footer-nav {
